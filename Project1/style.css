@@ -1,0 +1,152 @@
+/* === Global App Background === */
+[data-testid="stAppViewContainer"] {
+    /*background: linear-gradient(135deg, #1b1d27, #262b3a);*/
+    background: #161822;
+    color: #f0f0f0;
+    box-shadow: none !important;
+}
+
+/* === Sidebar === */
+[data-testid="stSidebar"] {
+    background: #161822;
+    color: #ffffff;
+    border-right: 1px solid #161822;
+    box-shadow: none !important;
+}
+
+/* === Top Navigation Bar === */
+header[data-testid="stHeader"] {
+    background: #161822;
+    color: white;
+    border-bottom: 1px solid #161822;
+    box-shadow: none !important;
+}
+
+/* === Titles and Headings === */
+h1 {
+    color: #00b4d8;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 800;
+    text-shadow: none;
+}
+h2, h3 {
+    color: #4cd3c2;
+    text-shadow: none;
+}
+
+/* === Buttons === */
+button[kind="primary"],
+.stButton > button {
+    background: linear-gradient(90deg, #0066ff, #00bcd4);
+    color: white !important;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.1s ease-in-out;
+    box-shadow: none !important;
+}
+
+button[kind="primary"]:hover,
+.stButton > button:hover {
+    background: linear-gradient(90deg, #00bcd4, #0096ff);
+    transform: scale(1.02);
+}
+
+/* Disabled buttons */
+button[disabled], .stButton > button[disabled] {
+    opacity: 0.5 !important;
+    background: #3a3f54 !important;
+    color: #cccccc !important;
+    border: none !important;
+}
+
+/* === Form Inputs === */
+.stSelectbox, .stNumberInput, .stTextInput, .stSlider, .stRadio, .stExpander {
+    background-color: #161822 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+.stRadio > label, .stSelectbox label, .stNumberInput label {
+    color: #d8dee9 !important;
+}
+
+/* === Tables / DataFrames === */
+div[data-testid="stDataFrame"] {
+    background-color: #202436 !important;
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: 1px solid #161822;
+    box-shadow: none !important;
+}
+
+/* === Expander background === */
+.streamlit-expanderHeader {
+    background-color: #161822 !important;
+    color: #e6e6e6 !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+/* === Links and Text === */
+a, p, span, label {
+    color: #e6e6e6 !important;
+}
+
+/* === Scrollbars === */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #161822;
+    border-radius: 10px;
+}
+
+/* === Radio Buttons === */
+.stRadio > div {
+    background: #161822 !important;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* === Fix for number input +/- buttons === */
+div[data-baseweb="input"] button {
+    background: #2a2e3d !important;
+    color: #ffffff !important;
+    border: 1px solid #161822 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+div[data-baseweb="input"] button:hover {
+    background: #161822 !important;
+    border: 1px solid #00bcd4 !important;
+}
+
+div[data-baseweb="input"] svg {
+    fill: #ffffff !important;
+}
+
+/* === Remove inner form / card shadows === */
+section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] > div,
+section[data-testid="stSidebar"] div[data-testid="stForm"] {
+    box-shadow: none !important;
+    background: #161822 !important;
+    border: none !important;
+}
+
+/* Remove background shadow for form in main area */
+div[data-testid="stForm"] {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Remove padding and border inside sidebar containers */
+section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] > div {
+    border: none !important;
+    padding: 0 !important;
+}
